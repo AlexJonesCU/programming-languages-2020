@@ -11,7 +11,7 @@
 
 - Assignment 3 is important because it will show that all we learned so far also applies to imperative programming languages. It will make clear (I hope) that in a certain sense functional programming is easier than imperative programming. Or, from another point of view, that it is possible and natural to combine functional and imperative programming in one and the same language.
 
-**Final Exam:** I designed the outlines of the final. It will be a take-home over 3 days. I am planning to run it Tue-Thu in the final's week, but let me know if there are reasons to move it. The final will consists of (subject to change)
+**Final Exam:** I designed the outlines of the final. It will be a take-home over 3 days. I will hand the final out **Tue 8am** with a deadline of **Thu midnight**. The final will consists of (subject to change)
 
 - 10 points worth of questions taken from the homework on lambda calculus and rewriting.
 - two problem solving tasks each worth 10 points on the topic of rewriting/algorithms.

@@ -5,7 +5,7 @@ This assignment is worth 19% of the total grade.
 #### Deadlines: 
 
 - Part 1: **Dec 7**. This deadline is close but all you need to do is to transfer your solution of Assignment 2 into the new programming language `LambdaFun`.
-- Part 2: tba
+- Part 2: tba below.
 
 ## Introduction
 
@@ -97,7 +97,7 @@ The assignment provides the round robin algorithm, but asks you to implement the
 
 This assignment is worth 13% of the total grade.
 
-Deadline for hand-in is Sunday, Dec 20.
+**Deadline** for hand-in is Sunday, **Dec 20**.
 
 Each group submits their answer by sending me a link to a github repository via [email using this link](mailto:akurz@chapman.edu?subject=CPSC-354-Assignment-3).
 

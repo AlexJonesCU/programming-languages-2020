@@ -18,6 +18,6 @@ The theoretical component will be assessed by a final exam worth 30% and a numbe
 
 - 50% of the course on theoretical aspects.  
   - 2 tests (midterms) worth 10% each (one on termrewriting and one on program verification).
-  - Final exam worth 30%. The final exam will cover the same material as the two midterms which will also serve as a study guide. 
+  - Final exam worth 30%. The final exam will cover the same material as the two midterms which will also serve as a study guide. The final be a take home in the finals week **Tue 8am - Thu midnight**.
 
 **Homework:** Most lectures will finish with some homework. Homework is not graded but feel free to hand it in for feedback or come into my office hourse to discuss. Homework is essential to achieve the learning outcomes.

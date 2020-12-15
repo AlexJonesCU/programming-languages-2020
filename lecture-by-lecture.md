@@ -103,12 +103,9 @@ The Programming Language [LambdaFun](https://github.com/alexhkurz/programming-la
 
 ---
 
-## ... coming up ... 
-
 ## Bonus Lectures
 
 In previous years, this course was more theoretical and less focussed on Haskell. If you have feedback on this let me know. I put here some lectures from the previous years. If you find this interesting and want to know more get in touch. We may also move some of these lectures back into the main part, depending on time.
-
 
 #### More on Syntax and Semantics
 

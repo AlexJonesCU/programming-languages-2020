@@ -25,6 +25,14 @@ I am also grateful to my friends and colleagues from the [Midlands Graduate Scho
 
 Many thanks to all with whom I had the opportunity to discuss the contents of the course, including (but not limited to) Roy Crole,  Peter Jipsen, Drew Moshier, Paula Severi, and Fer-Jan de Vries; to the students of 2018 and 19 for continuing challenge and feedback; to all the colleagues from whom I have been learning over the years.
 
+## Online Courses on Programming Languages
+
+  - [Programming Languages](https://opendsa-server.cs.vt.edu/ODSA/Books/PL/html/#). This course follows a similar outline. Chapters 1.1, 1.3, 2.1, 2.2, 3.1-3.4, 3.6, 3.9 could be a useful second reference for this course. Chapter 4 corresponds to LambdaNat and Chapter 5 to LambdaFun but the details are quite different. We only touch upon Chapter 6, so that could be further reading. Chapter 7 on Type Systems is a topic we will study in our coure on Compiler Construction. 
+
+  - [Notes on Programming Paradigms](https://tgdwyer.github.io/). A course that shares many aims and methods with this one. I just browsed over the content, but it looks promising ... recommended if you want to have a different point of view on the same general topic.
+
+
+
 <font color=grey>
 
 ## "Must Reads"
@@ -98,8 +106,6 @@ None of this is required reading, but all of it is part of the wider landscape i
   - ...
 
 - Comparing different programming paradigms. There is a raging debate about the pros and cons of different programming paradigms. Reading widely to get a lot of different views is recommended. Often the comments are the most interesting part. Here are some entry points. [Was object-oriented programming a failure?](https://www.quora.com/Was-object-oriented-programming-a-failure/answer/Michael-O-Church?srid=wk4L) ...
-
-- [Notes on Programming Paradigms](https://tgdwyer.github.io/) A course that shares many aims and methods with this one. I just browsed over the content, but it looks promising ... recommended if you want to have a different point of view on the same topic.
 
 - [Compiling Lisp to JavaScript From Scratch in 350 LOC](https://gilmi.xyz/blog/post/2016/10/14/lisp-to-js) 
 

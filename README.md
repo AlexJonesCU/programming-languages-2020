@@ -18,13 +18,6 @@ This course has been developed by Alexander Kurz and Samuel Balco for the studen
 - [Extra Credit](extra-credit.md)
 - [Relationship to Other Courses](other-courses.md)
 
-**Acknowledgements:**
-
-The specific way we intertwine theory and practice may be original, but we build on a long tradition of teaching courses on  principles of programming languages. The idea that the best way to understand how programming languages work under the hood is to learn how to build your own, goes back at least to the MIT course/"Wizard Book" by Abelson and Sussman, [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html), which is still worth reading today. Our use of the parser generator BNFC for the language `LambdaNat` follows Aarne Ranta's book [Implementing Programming Langugages](http://www.grammaticalframework.org/ipl-book), which forms the basis for the [Programming Language Technology](http://www.cse.chalmers.se/edu/course/DAT151/) course at Chalmers University. We will hear more about this in our course on Compiler Construction next semester. `LambdaNat` itself is a lambda calculus with just enough additional syntactic sugar so that writing programs in `LambdaNat` is similar enough to mainstream functional programming. The way we then extend `LambdaNat` to our second language, `LambdaFun`, by adding while loops, memory allocation, assignment, and pointers is inspired by Michael Spivey's course on [Programming Languages](https://spivey.oriel.ox.ac.uk/corner/Welcome_to_Spivey%27s_Corner) at Oxford University.
-
-I am also grateful to my friends and colleagues from the [Midlands Graduate School in the Foundations of Computing Science](http://www.cs.nott.ac.uk/MGS/) who have influenced with their graduate level courses from 2002 onwards the choice of material. In fact, it is one of the aims of this course to provide at the undergraduate level the foundations that will equip interested students with the knowledge needed to study more advanced topics in programming languages. Many of the paragraphs labelled "Further Study'' are meant to provide bridges to such graduate level courses.
-
-Many thanks to all with whom I had the opportunity to discuss the contents of the course, including (but not limited to) Roy Crole,  Peter Jipsen, Drew Moshier, Paula Severi, and Fer-Jan de Vries; to the students of 2018 and 19 for continuing challenge and feedback; to all the colleagues from whom I have been learning over the years.
 
 ## Online Courses on Programming Languages
 
@@ -32,9 +25,6 @@ Many thanks to all with whom I had the opportunity to discuss the contents of th
 
   - [Notes on Programming Paradigms](https://tgdwyer.github.io/). A course that shares many aims and methods with this one. I just browsed over the content, but it looks promising ... recommended if you want to have a different point of view on the same general topic.
 
-
-
-<font color=grey>
 
 ## "Must Reads"
 
@@ -50,9 +40,9 @@ I list some books that stood the test of time and are less technical and of wide
 
 ... I'd be curious to learn about your favourites ...
 
-## Stanford Encyclopedia of Philosophy
+## Early History of Programming Languages
 
-While Wikipedia is a good place to gain a first impression of a new topic, a great starting point for scholarly explorations are the articles in the SEP. I link some that are useful to locate the current course in the wider landscape of mathematics, logic, philosophy, computation, history. The articles can get quite technial but even just reading the introductions will broaden horizons. A nice exercise could be to arrange the topics and protagonists of these articles into a timeline and then to attempt a short history of the most important ideas and how they hang together.
+The early history of programming languages was driven by mathematicians, logicians and philosophers. A great way to explore it is the Stanford Encyclopedia of Philosophy (SEP). I link articles that feature some of the early researchers in programming language who will appear in our course such as Church, Turing, and Curry and others for whom we do not have time such as Dedekind, Peano, Russell, Hilbert, Brouwer, Goedel, Gentzen. The articles can get quite technical but just reading the introductions gives an idea of the broader questions and developments. A nice project could be to arrange the topics and protagonists of these articles into a timeline and then sketch a short history of the most important ideas and how they hang together.
 
 - [The Modern History of Computing](https://plato.stanford.edu/entries/computing-history/)  
 - [Dedekind](https://plato.stanford.edu/entries/dedekind-foundations/) and [The Early Development of Set Theory](https://plato.stanford.edu/entries/settheory-early/)
@@ -73,7 +63,13 @@ While Wikipedia is a good place to gain a first impression of a new topic, a gre
 
 Get in touch if you want to hear more about how these articles are related to this course.
 
-## Some Discussion Topics
+## Modern History of Programming Languages
+
+I would let the modern history of programming languages begin with Fortran and Lisp. Until approximately 1970 it was dominated by the problem of writing efficient compilers. By 1980, parsing and compiling was well understood and software engineering was born. We will have more time for this part of the history next semester in Compiler Construction. The discussion topics below mostly aim at current developments in programming languages.
+
+## Discussion Topics 
+
+(from 2020 ... more to follow in 2021)
 
 None of this is required reading, but all of it is part of the wider landscape in which this course is situated. Many of these links are to talks, videos, articles and blogs that do not represent carefully researched peer-reviewed authoritative expert consensus. Do not take opinions for granted but as an invitation to start a discussion.
 
@@ -97,7 +93,11 @@ None of this is required reading, but all of it is part of the wider landscape i
 
 - Video: [Visualised Recursion](https://www.youtube.com/watch?v=OXo-uzzD4Js&feature=emb_logo) ... [Explanation](https://www.youtube.com/watch?v=gCciKhaK2v8)
 
-- [Hoare's 1980 Turing Award Lecture](https://dl.acm.org/doi/pdf/10.1145/1283920.1283936) has a lot of interesting anecdotes about Quicksort, Algol, the switch statement, early compilers, operating systems, Hoare logic. Also some valuable general lessons about software engineering. I collected some of my [favourite quotes](hoare-1980-quotes.md).
+- Tony Hoare: 
+  - [1980 Turing Award Lecture](https://dl.acm.org/doi/pdf/10.1145/1283920.1283936) has a lot of interesting anecdotes about Quicksort, Algol, the switch statement, early compilers, operating systems, Hoare logic. Also some valuable general lessons about software engineering. I collected some of my [favourite quotes](hoare-1980-quotes.md).
+
+  - Video: [Null References: The Billion Dollar Mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/) 2009. picks up some of the same themes, but focuses on pointers and memory management, on compile-time vs run-time. "I don't care about the subscript error, I want it to run." (18:00).The discussion around (24:27) about disjoint unions is related to `Maybe` in Haskell and then to abstract syntax trees. Difficulty of proofs of program correctness as an objective measure of the quality of a program language (32:32). Programming language design is driven by the need to fight viruses (37:40). "The virus will find a case that is not likely to arise". "If it hadn't been for the get routine of C, we might have had no malware". (39:25).
+
 - [Lego Turing Machine](https://vimeo.com/44202270)
 
 - Multi-Paradigm Languages: 
@@ -121,4 +121,10 @@ None of this is required reading, but all of it is part of the wider landscape i
 
   - ...
 
-</font>
+## Acknowledgements
+
+The specific way we intertwine theory and practice may be original, but we build on a long tradition of teaching courses on  principles of programming languages. The idea that the best way to understand how programming languages work under the hood is to learn how to build your own, goes back at least to the MIT course/"Wizard Book" by Abelson and Sussman, [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html), which is still worth reading today. Our use of the parser generator BNFC for the language `LambdaNat` follows Aarne Ranta's book [Implementing Programming Langugages](http://www.grammaticalframework.org/ipl-book), which forms the basis for the [Programming Language Technology](http://www.cse.chalmers.se/edu/course/DAT151/) course at Chalmers University. We will hear more about this in our course on Compiler Construction next semester. `LambdaNat` itself is a lambda calculus with just enough additional "syntactic sugar" so that writing programs in `LambdaNat` allows us to do simple mainstream functional programming. The way we then extend `LambdaNat` to our second language, `LambdaFun`, by adding while loops, memory allocation, assignment, and pointers is inspired by Michael Spivey's course on [Programming Languages](https://spivey.oriel.ox.ac.uk/corner/Welcome_to_Spivey%27s_Corner) at Oxford University.
+
+I am also grateful to my friends and colleagues from the [Midlands Graduate School in the Foundations of Computing Science](http://www.cs.nott.ac.uk/MGS/) who have influenced with their graduate level courses from 2002 onwards the choice of material. In fact, it is one of the aims of this course to provide at the undergraduate level the foundations that will equip interested students with the knowledge needed to study more advanced topics in programming languages. Many of the paragraphs labelled "Further Study'' are meant to provide bridges to such graduate level courses.
+
+Many thanks to all with whom I had the opportunity to discuss the contents of the course, including (but not limited to) Roy Crole,  Peter Jipsen, Drew Moshier, Paula Severi, and Fer-Jan de Vries; to the students of 2018 and 19 for continuing challenge and feedback; to all the colleagues from whom I have been learning over the years.

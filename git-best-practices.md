@@ -8,12 +8,11 @@ Have a look at this [tutorial](https://guides.github.com/activities/hello-world/
 
 ## Git best practices
 
-I collect here some lessons learned from using git for [assignments](assignments.md). 
-
 Assignments can be done in groups of two. Create a git repo for your group. This repo should be private as you will use it to share solutions to assignments within your group and with me.
 
 Proper use of git will be considered for grading. Complete solutions uploaded to the repo just before submission and not containing a trail of your work **will not be accepted for grading**.
 
+- The purpose of git is to share code and documentation with collaborators. Before you commit something to the repo, take a second to think about whether the commit will serve this purpose.
 - Unless there are major changes in the composition of the groups, do not make a new repo for a new assignment. Rather create meaningful subfolders such as `Assignment2`, etc.
 - Use the repo to create a trail of your work. Commit and push often.
 - Break your assignments into milestones. Make sure all milestones are pushed.

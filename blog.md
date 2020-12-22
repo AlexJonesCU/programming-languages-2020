@@ -18,7 +18,14 @@ The minimal way to set up a blog is as follows:
 - Add a `README.md`.
 - Make `.md` files for each blog entry. Link them from the README.
 
-To learn markdown, google "markdown cheat sheet" ... it is easy. And it is what I use for this course. Btw, you can use all of html in markdown. It makes the writing more cumbersome, but also gives you additional options. 
+To learn markdown, google "markdown cheat sheet" ... it is easy. And it is what I use for this course. Btw, you can use all of html in markdown. It makes the writing more cumbersome, but also gives you additional options. Here are some tips:
+
+- Link your blog entries from the README.
+- Never paste naked urls into md, use `[]()` and put a title in `[]`.
+- Spellcheck your blogs.
+- Typeset code as code, not text.
+- Add a list of references at the end of each blog.
+
 
 Personally, I am more interested in content than in form. So if you take my github repo for this course as a guideline this is fine. But I don't want to discourage more sophisticated design of a webpage. If you like to design a fancy webpage, that will gain you points as well.
 

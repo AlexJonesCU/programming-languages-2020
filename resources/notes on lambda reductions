@@ -1,0 +1,96 @@
+(\m. (\n. (\f. (m (n f)))))
+(\f. (\x. f(f x)))
+(\f. (\x. f(f(f x))))
+
+= substitute for m and n
+
+(((\f. ((\f. (\x. f(f x))) ((\f. (\x. f(f(f x)))) f)))))
+
+\f. (\f. (\x. f(f x))) ((\f. (\x. f(f(f x)))) f)
+
+= substitute for the third \f
+
+\f. ((\f. (\x. f(f x))) (((\x. f(f(f x))))))
+
+\f. (\f. (\x. f(f x))) (\x. f(f(f x)))
+\f. (\f. (\x. f(f x))) (\x. f(f(f x)))
+
+= substitute for the second \f
+
+\f. (((\x. (\x. f(f(f x))) ((\x. f(f(f x))) x))))
+
+\f. (\x. (\x. f(f(f x))) ((\x. f(f(f x))) x))
+
+= substitute for the third \x
+
+\f. (\x. (\x. f(f(f x))) ((f(f(f x)))))
+
+\f. (\x. (\x. f(f(f x))) (f(f(f x))))
+
+= substitute for the second \x
+
+\f. (\x. (f(f(f(f(f(f x)))))))
+
+\f. \x. f(f(f(f(f(f x)))))
+
+==================================================================================================================================================================================================================
+
+(\m. (\n. (\f. (\x. (m (n f)) x))))
+(\f. (\x. f(f x)))
+(\f. (\x. f(f(f x))))
+
+= substitute for m and n
+
+\f. (\x. ((\f. (\x. f(f x))) ((\f. (\x. f(f(f x)))) f)) x)
+
+= substitute for the third \f, delete superfluous parentheses
+
+\f. (\x. ((\f. (\x. f(f x))) (((\x. f(f(f x)))))) x)
+
+\f. (\x. ((\f. (\x. f(f x))) (\x. f(f(f x)))) x)
+
+= substitute for the second \f
+
+\f. (\x. (((\x. (\x. f(f(f x))) ((\x. f(f(f x))) x)))) x)
+
+\f. (\x. (\x. (\x. f(f(f x))) ((\x. f(f(f x))) x)) x)
+
+= substitute for the second \x
+
+\f. (\x. ((\x. f(f(f x))) ((\x. f(f(f x))) x)))
+
+= substitute for the third \x
+
+\f. (\x. ((\x. f(f(f x))) ((f(f(f x))))))
+
+\f. (\x. ((\x. f(f(f x))) (f(f(f x)))))
+
+= substitute for the second \x
+
+\f. (\x. ((f(f(f (f(f(f x))))))))
+
+\f. (\x. (f(f(f(f(f(f x)))))))
+
+==================================================================================================================================================================================================================
+--- 
+
+(\ m . \ n . \ f . m (n f)) (\ f . \ x . f (f x)) (\ f . \ x . f (f (f x)))
+
+--- LambdaNat4 gives:
+
+(\ b . (\ c . \ d . c (c d)) ((\ f . \ x . f (f (f x))) b))
+
+--- continued by hand:
+
+(\ b . (\ c . \ d . c (c d)) ((\ x . b (b (b x)))))
+\ b . (\ c . \ d . c (c d)) (\ x . b (b (b x)))
+
+\ b . (\ d . (\ x . b (b (b x))) ((\ x . b (b (b x))) d))
+
+\ b . (\ d . (b (b (b ((\ x . b (b (b x))) d))))) 
+
+\ b . (\ d . (b (b (b (( b (b (b d)))))))) 
+
+\ b . (\ d . (b (b (b ( b (b (b d))))))) 
+
+
